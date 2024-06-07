@@ -1,3 +1,5 @@
+'use client'
+
 import { add, remove } from '@/globalRedux/Features/favoritesSlice';
 import { RootState } from '@/globalRedux/store';
 import { IJob } from '@/types/job.interface';
