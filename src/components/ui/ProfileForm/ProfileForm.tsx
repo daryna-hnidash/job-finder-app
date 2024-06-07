@@ -43,7 +43,9 @@ export const ProfileForm = () => {
           }, {} as FormValues);
 
           console.log(trimmedValues);
-          window.localStorage.setItem('user', JSON.stringify(trimmedValues));
+          if (typeof window !== 'undefined') {
+            window.localStorage.setItem('user', JSON.stringify(trimmedValues));
+          }
           dispatch(set(trimmedValues));
           setSubmitting(false);
         }}
