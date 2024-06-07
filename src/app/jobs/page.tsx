@@ -44,7 +44,7 @@ export default function JobsPage() {
               <input
                 type="text"
                 placeholder="Search..."
-                className="w-96 px-4 py-3 text-xl focus:outline-none"
+                className="w-full px-4 py-3 text-xl focus:outline-none md:w-96"
                 onChange={(e) => {
                   setEnabled(false);
                   setQuery(e.target.value);
