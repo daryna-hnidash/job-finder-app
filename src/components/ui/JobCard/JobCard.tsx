@@ -19,7 +19,9 @@ export const JobCard: React.FC<Props> = ({ job }) => {
 
   const setCurrentJob = () => {
     dispatch(set(job));
-    window.localStorage.setItem('currentJob', JSON.stringify(job));
+    if (typeof window !== 'undefined') {
+        window.localStorage.setItem('currentJob', JSON.stringify(job));
+    }
   };
 
   return (
