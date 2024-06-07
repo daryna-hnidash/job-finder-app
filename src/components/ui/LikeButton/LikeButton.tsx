@@ -21,11 +21,11 @@ export const LikeButton: React.FC<Props> = ({ job }) => {
       const newFavList = favorites.filter(
         (item: IJob) => item.job_id !== job.job_id
       );
-      localStorage.setItem('favorites', JSON.stringify(newFavList));
+      window.localStorage.setItem('favorites', JSON.stringify(newFavList));
     } else {
       dispatch(add(job));
       const newFavList = [...favorites, job];
-      localStorage.setItem('favorites', JSON.stringify(newFavList));
+      window.localStorage.setItem('favorites', JSON.stringify(newFavList));
     }
   };
 
