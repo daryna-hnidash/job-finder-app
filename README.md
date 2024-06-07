@@ -1,7 +1,5 @@
 ### JobFinder App
 
-**[DEMO LINK]()**
-
 ## Description
 This project is a job search application that allows users to search for job listings, view job details, like jobs, view liked jobs, and create a profile. The project utilizes the LetScrape Job Search API for fetching job data.
 
@@ -19,3 +17,11 @@ Job Details Page: Each job card has a 'details' button that leads to the job det
 - Formik with Yup: Used for form handling and validation.
 - Axios with SWR Hooks (useSWR): Used for making queries to the LetScrape API and handling data fetching.
 
+## Getting Started
+1. Clone the repository.
+2. Install dependencies using npm install.
+3. Run the development server using npm run dev.
+4. Start exploring and contributing to the project!
+
+
+*by Daryna Hnidash*
