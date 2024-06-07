@@ -24,7 +24,7 @@ const Hero = () => {
           Glassdoor, ZipRecruiter, Monster, and many other public job sites!
         </p>
         <p className="font-semibold text-teal-600">
-          JobFinder - All the jobs you're looking for, in one place!
+          JobFinder - All the jobs you are looking for, in one place!
         </p>
       </div>
     </div>
