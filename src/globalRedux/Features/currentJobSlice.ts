@@ -3,7 +3,7 @@
 import { IJob } from '@/types/job.interface';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-const dataFromStorage = localStorage.getItem('currentJob');
+const dataFromStorage = window.localStorage.getItem('currentJob');
 
 type State = {
   currentJob: IJob;
