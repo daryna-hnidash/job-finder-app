@@ -11,7 +11,7 @@ export default function ProfilePage() {
   const dispatch = useDispatch();
 
   const removeUser = () => {
-    localStorage.removeItem('user');
+    window.localStorage.removeItem('user');
     dispatch(setUser(null));
   };
 
