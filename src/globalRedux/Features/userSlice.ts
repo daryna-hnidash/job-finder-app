@@ -4,7 +4,7 @@ import { IJob } from '@/types/job.interface';
 import { IUser } from '@/types/user.interface';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-const dataFromStorage = window.localStorage.getItem('user');
+const dataFromStorage = (typeof window !== 'undefined') ? window.localStorage.getItem('user') : '';
 
 type State = {
   user: IUser | null
