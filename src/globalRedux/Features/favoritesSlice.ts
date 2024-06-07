@@ -3,7 +3,7 @@
 import { IJob } from '@/types/job.interface';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-const dataFromStorage = window.localStorage.getItem('favorites');
+const dataFromStorage = (typeof window !== 'undefined') ? window.localStorage.getItem('favorites') : '';
 
 const initialState: IJob[] = dataFromStorage
   ? JSON.parse(dataFromStorage)
