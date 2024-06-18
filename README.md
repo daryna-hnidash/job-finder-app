@@ -15,7 +15,7 @@ Job Details Page: Each job card has a 'details' button that leads to the job det
 
 ## Technologies Used
 - Next.js 14 with TypeScript: Main framework for building the application.
-- Tailwind CSS: Used for styling the application. Basic styles should be used to ensure readability and structure.
+- Tailwind CSS: Used for styling the application.
 - Formik with Yup: Used for form handling and validation.
 - Axios with SWR Hooks (useSWR): Used for making queries to the LetScrape API and handling data fetching.
 
